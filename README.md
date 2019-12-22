@@ -1,2 +1,3 @@
 # HackComponents
-My lib with some of Swift Components
+
+My lib with some of Swift Components for fast hackathon coding
