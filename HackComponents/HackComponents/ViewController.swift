@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		Debugger.log(type: .error, logString: nil)
 		// Do any additional setup after loading the view.
 	}
 

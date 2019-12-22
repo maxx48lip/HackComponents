@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1163EF23AF98AC00810056 /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1163EE23AF98AC00810056 /* Debugger.swift */; };
 		5D74448B23AEF719001DE39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74448A23AEF719001DE39A /* AppDelegate.swift */; };
 		5D74448D23AEF719001DE39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D74448C23AEF719001DE39A /* ViewController.swift */; };
 		5D74449023AEF719001DE39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D74448E23AEF719001DE39A /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1163EE23AF98AC00810056 /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
 		5D74448723AEF719001DE39A /* HackComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D74448A23AEF719001DE39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D74448C23AEF719001DE39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D1163EC23AF97B500810056 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5D1163EE23AF98AC00810056 /* Debugger.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		5D1163F023AFA29B00810056 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D74448E23AEF719001DE39A /* Main.storyboard */,
+				5D74449123AEF719001DE39A /* HackComponents.xcdatamodeld */,
+				5D74449623AEF71B001DE39A /* LaunchScreen.storyboard */,
+				5D74449923AEF71B001DE39A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5D74447E23AEF719001DE39A = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +102,9 @@
 			children = (
 				5D74448A23AEF719001DE39A /* AppDelegate.swift */,
 				5D74448C23AEF719001DE39A /* ViewController.swift */,
-				5D74448E23AEF719001DE39A /* Main.storyboard */,
+				5D1163EC23AF97B500810056 /* Utilities */,
+				5D1163F023AFA29B00810056 /* Supporting Files */,
 				5D74449423AEF71B001DE39A /* Assets.xcassets */,
-				5D74449623AEF71B001DE39A /* LaunchScreen.storyboard */,
-				5D74449923AEF71B001DE39A /* Info.plist */,
-				5D74449123AEF719001DE39A /* HackComponents.xcdatamodeld */,
 			);
 			path = HackComponents;
 			sourceTree = "<group>";
@@ -225,6 +244,7 @@
 				5D74449323AEF719001DE39A /* HackComponents.xcdatamodeld in Sources */,
 				5D74448D23AEF719001DE39A /* ViewController.swift in Sources */,
 				5D74448B23AEF719001DE39A /* AppDelegate.swift in Sources */,
+				5D1163EF23AF98AC00810056 /* Debugger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
