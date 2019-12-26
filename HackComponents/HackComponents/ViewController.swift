@@ -22,11 +22,15 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .red
 		Debugger.log(type: .magic, logString: nil)
 		emulatingCasesCreate()
 		setupMainTableView()
-		// Do any additional setup after loading the view.
+		navigationController?.setNavigationBarHidden(false, animated: true)
+	}
+
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 
 	// MARK: - Setup TableView
@@ -48,8 +52,9 @@ class ViewController: UIViewController {
 
 	private func emulatingCasesCreate() {
 		emulatingCases = [
-			EmulatingCase(with: TextSamles.short.text, in: 0,
-						  actionBlock: { Debugger.log(type: .magic, logString: nil) }),
+			EmulatingCase(with: "Тест 1", in: 0,
+						  actionBlock: { self.navigationController?.pushViewController(SampleViewController(),
+																					   animated: true)}),
 			EmulatingCase(with: TextSamles.short.text, in: 0,
 						  actionBlock: { Debugger.log(type: .magic, logString: nil) }),
 			EmulatingCase(with: TextSamles.short.text, in: 0,

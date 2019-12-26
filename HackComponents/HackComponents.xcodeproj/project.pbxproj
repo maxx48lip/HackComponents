@@ -18,6 +18,9 @@
 		5D74449523AEF71B001DE39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D74449423AEF71B001DE39A /* Assets.xcassets */; };
 		5D74449823AEF71B001DE39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D74449623AEF71B001DE39A /* LaunchScreen.storyboard */; };
 		5D7444A323AEF71B001DE39A /* HackComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7444A223AEF71B001DE39A /* HackComponentsTests.swift */; };
+		5D77C24023B15CBE002FC7B4 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77C23F23B15CBE002FC7B4 /* SampleViewController.swift */; };
+		5D77C24623B2BE11002FC7B4 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77C24523B2BE11002FC7B4 /* SwitchTableViewCell.swift */; };
+		5D77C24823B510C0002FC7B4 /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77C24723B510C0002FC7B4 /* ColorPallete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		5D74449E23AEF71B001DE39A /* HackComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7444A223AEF71B001DE39A /* HackComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackComponentsTests.swift; sourceTree = "<group>"; };
 		5D7444A423AEF71B001DE39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D77C23F23B15CBE002FC7B4 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		5D77C24523B2BE11002FC7B4 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		5D77C24723B510C0002FC7B4 /* ColorPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5D1163F323AFADB100810056 /* TextSamles.swift */,
+				5D77C23F23B15CBE002FC7B4 /* SampleViewController.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -126,10 +133,12 @@
 			children = (
 				5D74448A23AEF719001DE39A /* AppDelegate.swift */,
 				5D74448C23AEF719001DE39A /* ViewController.swift */,
-				5D1163F623AFB5FC00810056 /* For Emulating */,
+				5D77C24723B510C0002FC7B4 /* ColorPallete.swift */,
+				5D77C24223B2BDC6002FC7B4 /* Cells */,
 				5D1163F523AFAF7200810056 /* Samples */,
 				5D1163EC23AF97B500810056 /* Utilities */,
 				5D1163F023AFA29B00810056 /* Supporting Files */,
+				5D1163F623AFB5FC00810056 /* For Emulating */,
 				5D74449423AEF71B001DE39A /* Assets.xcassets */,
 			);
 			path = HackComponents;
@@ -142,6 +151,30 @@
 				5D7444A423AEF71B001DE39A /* Info.plist */,
 			);
 			path = HackComponentsTests;
+			sourceTree = "<group>";
+		};
+		5D77C24223B2BDC6002FC7B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D77C24323B2BDD1002FC7B4 /* TableViewCells */,
+				5D77C24423B2BDDF002FC7B4 /* CollectionViewCells */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		5D77C24323B2BDD1002FC7B4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5D77C24523B2BE11002FC7B4 /* SwitchTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		5D77C24423B2BDDF002FC7B4 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,12 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D77C24823B510C0002FC7B4 /* ColorPallete.swift in Sources */,
 				5D74449323AEF719001DE39A /* HackComponents.xcdatamodeld in Sources */,
+				5D77C24623B2BE11002FC7B4 /* SwitchTableViewCell.swift in Sources */,
 				5D1163F423AFADB100810056 /* TextSamles.swift in Sources */,
 				5D74448D23AEF719001DE39A /* ViewController.swift in Sources */,
 				5D74448B23AEF719001DE39A /* AppDelegate.swift in Sources */,
 				5D1163F223AFAA8D00810056 /* EmulatingCase.swift in Sources */,
 				5D1163EF23AF98AC00810056 /* Debugger.swift in Sources */,
+				5D77C24023B15CBE002FC7B4 /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

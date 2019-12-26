@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	///------------------------------------------------------
 	func application(_ application: UIApplication,
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+		let playgroundController = ViewController()
+		let navController = UINavigationController(rootViewController: playgroundController)
+		navController.navigationItem.backBarButtonItem?.style = .done
+		self.window?.rootViewController = navController
+		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 		return true
 	}
 
