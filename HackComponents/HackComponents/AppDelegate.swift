@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let navController = UINavigationController(rootViewController: playgroundController)
 		navController.navigationItem.backBarButtonItem?.style = .done
 		self.window?.rootViewController = navController
-		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 		return true
 	}
 

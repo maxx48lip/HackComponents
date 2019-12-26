@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		5D1163EE23AF98AC00810056 /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
-		5D1163F123AFAA8D00810056 /* EmulatingCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatingCase.swift; sourceTree = "<group>"; };
+		5D1163F123AFAA8D00810056 /* EmulatingCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmulatingCase.swift; path = ../EmulatingCase.swift; sourceTree = "<group>"; };
 		5D1163F323AFADB100810056 /* TextSamles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSamles.swift; sourceTree = "<group>"; };
 		5D1163F723AFBB0E00810056 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5D74448723AEF719001DE39A /* HackComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,15 +91,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D1163F523AFAF7200810056 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				5D1163F323AFADB100810056 /* TextSamles.swift */,
-				5D77C23F23B15CBE002FC7B4 /* SampleViewController.swift */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
 		5D1163F623AFB5FC00810056 /* For Emulating */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +125,8 @@
 				5D74448A23AEF719001DE39A /* AppDelegate.swift */,
 				5D74448C23AEF719001DE39A /* ViewController.swift */,
 				5D77C24723B510C0002FC7B4 /* ColorPallete.swift */,
+				5D77C24A23B54062002FC7B4 /* Samples */,
 				5D77C24223B2BDC6002FC7B4 /* Cells */,
-				5D1163F523AFAF7200810056 /* Samples */,
 				5D1163EC23AF97B500810056 /* Utilities */,
 				5D1163F023AFA29B00810056 /* Supporting Files */,
 				5D1163F623AFB5FC00810056 /* For Emulating */,
@@ -156,18 +147,10 @@
 		5D77C24223B2BDC6002FC7B4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				5D77C24323B2BDD1002FC7B4 /* TableViewCells */,
+				5D77C24B23B5412D002FC7B4 /* TableViewCells */,
 				5D77C24423B2BDDF002FC7B4 /* CollectionViewCells */,
 			);
 			name = Cells;
-			sourceTree = "<group>";
-		};
-		5D77C24323B2BDD1002FC7B4 /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				5D77C24523B2BE11002FC7B4 /* SwitchTableViewCell.swift */,
-			);
-			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		5D77C24423B2BDDF002FC7B4 /* CollectionViewCells */ = {
@@ -175,6 +158,23 @@
 			children = (
 			);
 			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		5D77C24A23B54062002FC7B4 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				5D1163F323AFADB100810056 /* TextSamles.swift */,
+				5D77C23F23B15CBE002FC7B4 /* SampleViewController.swift */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		5D77C24B23B5412D002FC7B4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5D77C24523B2BE11002FC7B4 /* SwitchTableViewCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

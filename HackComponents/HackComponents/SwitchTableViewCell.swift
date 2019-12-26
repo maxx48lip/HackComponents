@@ -53,7 +53,7 @@ final class SwitchTableViewCell: UITableViewCell {
 	}
 
 	// MARK: - Private methods
-	
+
 	private func setupConstraints() {
 		contentView.addSubview(switcher)
 		contentView.addSubview(titleLabel)
